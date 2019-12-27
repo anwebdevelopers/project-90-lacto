@@ -1,0 +1,21 @@
+
+@font-face {
+	font-family: 'Arial Rounded MT Pro Cyr';
+	src: local('Arial Rounded MT Pro Cyr Bold'), local('ArialRoundedMTProCyr-Bold'),
+	url('../fonts/ArialRoundedMTProCyr-Bold.woff2') format('woff2'),
+	url('../fonts/ArialRoundedMTProCyr-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial Rounded MT Pro Cyr';
+	src: local('Arial Rounded MT Pro Cyr'), local('ArialRoundedMTProCyr'),
+	url('../fonts/ArialRoundedMTProCyr.woff2') format('woff2'),
+	url('../fonts/ArialRoundedMTProCyr.woff') format('woff');
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
