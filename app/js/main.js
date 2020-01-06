@@ -2,12 +2,23 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
 
     'use strict';
 
+    let windowWidth = window.innerWidth;
+
+    window.addEventListener( 'resize', function() {
+
+        const newWindowWidth = window.innerWidth;
+
+        if ( windowWidth !== newWindowWidth ) {
+            windowWidth = newWindowWidth;
+        }
+    } );
+
     /*******************************************************/
     //MENU
     /*******************************************************/
     ( function() {
 
-        let windowWidth = window.innerWidth;
+
 
         const elemNav = document.querySelector('.header__nav'),
             buttonNav = document.querySelector('.header__nav-button');
@@ -68,7 +79,6 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
                 .addClass( 'swiper-slide' )
                 .wrapAll( '<div class="hero__container swiper-container"><div class="hero__wrapper swiper-wrapper"></div></div>' )
                 .each( function () {
-                    console.log($( this ).find('.hero__item-image'))
                     $hero__box.closest('.hero__slider').find('.hero__head-wrapper').append( $( this ).find('.hero__item-image').addClass( 'swiper-slide' ) )
 
 
@@ -145,4 +155,37 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
         } );
 
     } ( jQuery ) );
+
+    /*******************************************************/
+    //HERO PARALLAX
+    /*******************************************************/
+    ( function( $ ) {
+        $( '.hero__parallax' ).each( function () {
+            var scene = this;
+            var parallaxInstance = new Parallax(scene, {
+                relativeInput: true,
+                clipRelativeInput: true,
+                // calibrateX: true,
+                // calibrateY: true,
+                scalarX: 12,
+                scalarY: 15,
+                invertX: false,
+                invertY: false,
+                originX: 0.1,
+                originY: 0.1,
+                //frictionX: 0.05,
+                frictionY: 0.05,
+            });
+
+            window.addEventListener( 'resize', function() {
+
+                windowWidth <= 768 ? parallaxInstance.disable() : parallaxInstance.enable()
+            } );
+        });
+
+
+
+    } ( jQuery ) );
+
+
 });
