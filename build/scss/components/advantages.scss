@@ -1,0 +1,104 @@
+.advantages {
+    padding: 5rem 0;
+    position: relative;
+    z-index: 1;
+}
+.advantages__box {
+    margin-top: 5rem;
+    padding: 10rem 0;
+
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: -5rem;
+        bottom: -5rem;
+        width: 100vw;
+        transform: translateX(-50%);
+        background-image: url('../img/bg-advantages.png');
+        background-position: 50% 50%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    //display: flex;
+    //flex-wrap: wrap;
+    //justify-content: space-between;
+    column-count: 2;
+    column-gap: 5%;
+}
+.advantages__item {
+    //flex: 0 0 auto;
+    //width: 47.5%;
+    //padding-top: 5rem;
+    //&:nth-child(even) {
+        margin-top: 5rem;
+    //}
+    &:first-child {
+        margin-top: -5rem;
+    }
+    break-inside: avoid;
+    display: flex;
+}
+.advantages__item-image {
+    margin: 0;
+    flex: 0 0 auto;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.advantages__item-text {
+    flex: 1 1 auto;
+    margin: 0 0 0 3rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+//-728 606 687,59 8:08
+//-729 099 947,88 9:08
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .advantages__box {
+        column-count: auto;
+        padding: 5rem 0;
+    }
+    .advantages__item:first-child {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+    .advantages__item-image {
+        width: 6rem;
+        height: 6rem;
+    }
+    .advantages__item-text {
+        margin-left: 2rem;
+    }
+    .advantages__item-text {
+        font-size: 1.6rem;
+    }
+}
