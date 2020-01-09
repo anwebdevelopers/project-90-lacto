@@ -179,9 +179,11 @@ body {
 	}
 	h1, h2, h3, h4, h5, h6, p, ul, ol, img, blockquote {
 		&:not( [ class*="align-" ] ) {
-			margin-top: 5rem;
+			&:not(:first-child) {
+				margin-top: 4rem;
+			}
 		}
-		margin-bottom: 5rem;
+		margin-bottom: 4rem;
 	}
 	ul,ol {
 		li {
@@ -222,11 +224,11 @@ body {
 	}
 	*.align-left {
 		float: left;
-		margin-right: 5rem;
+		margin-right: 4rem;
 	}
 	*.align-right {
 		float: right;
-		margin-left: 5rem;
+		margin-left: 4rem;
 	}
 	*.align-wide {
 		position: relative;
@@ -294,6 +296,7 @@ body {
 @import "components/advantages";
 @import "components/impact";
 @import "components/reception";
+@import "components/distributors";
 
 
 @media only screen and (max-width : 1280px) {

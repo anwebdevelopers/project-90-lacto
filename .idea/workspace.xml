@@ -2,53 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f91a77-5f6e-47ea-8c83-f0eb74a5d28b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/img/bg-advantages.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/bg-advantages.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-advantages-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-advantages-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-advantages-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-advantages-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-advantages-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-advantages-6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-inpact.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/.jshintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/demo/scss/tilt.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/dest/tilt.jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/dest/tilt.jquery.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/dest/tilt.jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/browsersync.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/default.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/scss.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/tests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulp/tasks/watch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/src/tilt.jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/tests/tests.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/tests/tests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/libs/tilt.js/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/advantages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/impact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/reception.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/bg-reception.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-articles-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-articles-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-articles-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/img-distributors.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/components/distributors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/img-about.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/img-about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/Oval Copy 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/Oval Copy 8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/img-inpact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/img-inpact.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/components/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scss/components/impact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/impact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scss/components/reception.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/reception.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <list id="bf1cc2a1-eed9-4673-be9b-2a8bb0ebd5de" name="ignore" comment="ignore" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +88,8 @@
       <workItem from="1578026290879" duration="4780000" />
       <workItem from="1578277866523" duration="13589000" />
       <workItem from="1578365947625" duration="5676000" />
-      <workItem from="1578452140730" duration="10172000" />
+      <workItem from="1578452140730" duration="10222000" />
+      <workItem from="1578538119871" duration="14767000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовый коммит">
       <created>1565692588708</created>
@@ -132,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578315890658</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="06.01.2020">
+      <created>1578486660258</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578486660258</updated>
+    </task>
+    <task id="LOCAL-00004" summary="08.01.2020">
+      <created>1578486690680</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578486690680</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,17 +144,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Стартовый коммит" />
     <MESSAGE value="06.01.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="06.01.2020" />
+    <MESSAGE value="08.01.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="08.01.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577414826197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577414826197" />
-    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1578486679891">
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1578486690242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578486679891" />
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578486690242" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1577327987339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -184,14 +172,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577327987338" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578486671136">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578486693836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578486671136" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578452146914">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578486693836" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578538147229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578452146914" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578365950226" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578538147229" />
   </component>
 </project>
