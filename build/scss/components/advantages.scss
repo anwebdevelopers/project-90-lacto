@@ -29,8 +29,10 @@
     //justify-content: space-between;
     column-count: 2;
     column-gap: 5%;
+    //counter-reset: advantages-counter;
 }
 .advantages__item {
+    //counter-increment: advantages-counter;
     //flex: 0 0 auto;
     //width: 47.5%;
     //padding-top: 5rem;
@@ -42,6 +44,75 @@
     }
     break-inside: avoid;
     display: flex;
+
+    &:nth-child(10n - 9) {
+        .advantages__item-image {
+            animation-delay: 0.2s;
+        }
+    }
+    &:nth-child(10n - 8) {
+        .advantages__item-image {
+            animation-delay: 0.4s;
+        }
+    }
+    &:nth-child(10n - 7) {
+        .advantages__item-image {
+            animation-delay: 0.6s;
+        }
+    }
+    &:nth-child(10n - 6) {
+        .advantages__item-image {
+            animation-delay: 0.8s;
+        }
+    }
+    &:nth-child(10n - 5) {
+        .advantages__item-image {
+            animation-delay: 1s;
+        }
+    }
+    &:nth-child(10n - 4) {
+        .advantages__item-image {
+            animation-delay: 1.2s;
+        }
+    }
+    &:nth-child(10n - 3) {
+        .advantages__item-image {
+            animation-delay: 1.4s;
+        }
+    }
+    &:nth-child(10n - 2) {
+        .advantages__item-image {
+            animation-delay: 1.6s;
+        }
+    }
+    &:nth-child(10n - 1) {
+        .advantages__item-image {
+            animation-delay: 1.8s;
+        }
+    }
+    &:nth-child(10n) {
+        .advantages__item-image {
+            animation-delay: 2s;
+        }
+    }
+}
+@keyframes zoomPulse {
+    0% {
+        transform: scale(1);
+        filter: saturate(1);
+    }
+    95% {
+        transform: scale(1);
+        filter: saturate(1);
+    }
+    97.5% {
+        transform: scale(1.1);
+        filter: saturate(3);
+    }
+    100% {
+        transform: scale(1);
+        filter: saturate(1);
+    }
 }
 .advantages__item-image {
     margin: 0;
@@ -55,6 +126,12 @@
         width: auto;
         height: auto;
     }
+    animation-name: zoomPulse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    //animation-delay: calc(counter(advantages-counter) * 0.1s);
+
 }
 .advantages__item-text {
     flex: 1 1 auto;

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f91a77-5f6e-47ea-8c83-f0eb74a5d28b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/img/bg-reception.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-articles-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-articles-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-articles-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-distributors-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-distributors.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/distributors.scss" afterDir="false" />
+    <list default="true" id="42f91a77-5f6e-47ea-8c83-f0eb74a5d28b" name="Default Changelist" comment="09.01.2020">
+      <change afterPath="$PROJECT_DIR$/app/img/img-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/components/articles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scss/components/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Oval Copy 5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/Oval Copy 8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/img-inpact.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/img-inpact.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/components/impact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/impact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/components/reception.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/reception.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scss/components/advantages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/advantages.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scss/components/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/hero.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/main.scss" afterDir="false" />
     </list>
     <list id="bf1cc2a1-eed9-4673-be9b-2a8bb0ebd5de" name="ignore" comment="ignore" />
@@ -89,7 +81,8 @@
       <workItem from="1578277866523" duration="13589000" />
       <workItem from="1578365947625" duration="5676000" />
       <workItem from="1578452140730" duration="10222000" />
-      <workItem from="1578538119871" duration="14767000" />
+      <workItem from="1578538119871" duration="14966000" />
+      <workItem from="1578648483979" duration="10302000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовый коммит">
       <created>1565692588708</created>
@@ -119,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578486690680</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="09.01.2020">
+      <created>1578573276908</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578573276908</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,17 +145,18 @@
     <MESSAGE value="Стартовый коммит" />
     <MESSAGE value="06.01.2020" />
     <MESSAGE value="08.01.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="08.01.2020" />
+    <MESSAGE value="09.01.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="09.01.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577414826197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577414826197" />
-    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1578486690242">
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1578659568324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578486690242" />
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578659568324" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1577327987339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -172,14 +173,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577327987338" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578486693836">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578573278549">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578486693836" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578538147229">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578573278549" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578649114352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578452146914" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578649114352" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578538147229" />
   </component>
 </project>
