@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42f91a77-5f6e-47ea-8c83-f0eb74a5d28b" name="Default Changelist" comment="09.01.2020">
-      <change afterPath="$PROJECT_DIR$/app/img/img-footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/articles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/footer.scss" afterDir="false" />
+    <list default="true" id="42f91a77-5f6e-47ea-8c83-f0eb74a5d28b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/full.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/components/advantages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/advantages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/components/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scss/components/impact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/impact.scss" afterDir="false" />
     </list>
     <list id="bf1cc2a1-eed9-4673-be9b-2a8bb0ebd5de" name="ignore" comment="ignore" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +75,8 @@
       <workItem from="1578365947625" duration="5676000" />
       <workItem from="1578452140730" duration="10222000" />
       <workItem from="1578538119871" duration="14966000" />
-      <workItem from="1578648483979" duration="10302000" />
+      <workItem from="1578648483979" duration="10392000" />
+      <workItem from="1579319383345" duration="9230000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовый коммит">
       <created>1565692588708</created>
@@ -119,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578573276908</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="10.01.2020">
+      <created>1578659754587</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578659754587</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,17 +147,18 @@
     <MESSAGE value="06.01.2020" />
     <MESSAGE value="08.01.2020" />
     <MESSAGE value="09.01.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="09.01.2020" />
+    <MESSAGE value="10.01.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.01.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577414826197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577414826197" />
-    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1578659568324">
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1578659752747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578659568324" />
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578659752747" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1577327987339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,14 +175,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577327987338" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578573278549">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1578659756325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578573278549" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1578649114352">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578659756325" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579319385502">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1578649114352" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579319385502" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578538147229" />
+    <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1579325619526">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="737" height="606" key="find.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579325619526" />
   </component>
 </project>

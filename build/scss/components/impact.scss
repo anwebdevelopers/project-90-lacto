@@ -60,15 +60,132 @@
     font-size: 2.4rem;
     line-height: 1.5;
 }
+@keyframes impactOpacity {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    29% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes impactSlideUp {
+    0% {
+        transform: translateY(30px);
+    }
+    1% {
+        transform: translateY(0);
+    }
+    29% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+@keyframes impactSlideDown {
+    0% {
+        transform: translateY(-30px);
+    }
+    1% {
+        transform: translateY(0);
+    }
+    29% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
 .impact__image {
     margin: 10rem 0 0 0;
     text-align: center;
-    img {
+
+    --impact-animation-period: 20s;
+    img,
+    svg {
         max-width: 100%;
         width: auto;
         height: auto;
+        #slides__background {
+            #slides__background-digit-1,
+            #slides__background-digit-2,
+            #slides__background-digit-3 {
+                //fill: #3E404D;
+                //animation: impactMain var(--impact-animation-period) linear  infinite;
+
+                animation-name: impactOpacity, impactSlideUp;
+                animation-duration: var(--impact-animation-period);
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            #slides__background-digit-1 {
+                animation-delay: 0s;
+            }
+            #slides__background-digit-2 {
+                animation-delay: calc(var(--impact-animation-period) / 3);
+            }
+            #slides__background-digit-3 {
+                animation-delay: calc(var(--impact-animation-period) / 3 * 2);
+            }
+        }
+        #slides__bakteria-1 {
+
+        }
+        #slides__content-1 {
+            #slides__content-1-line-1,
+            #slides__content-1-line-2,
+            #slides__content-1-line-3 {
+                animation-name: impactOpacity;
+                animation-duration: var(--impact-animation-period);
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            #slides__content-1-line-1 {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 1.3);
+            }
+            #slides__content-1-line-2 {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 2.6);
+            }
+            #slides__content-1-line-3 {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 3.9);
+            }
+
+            #slides__content-1-text-1 text,
+            #slides__content-1-text-2 text,
+            #slides__content-1-text-3 text {
+                animation-name: impactOpacity, impactSlideDown;
+                animation-duration: var(--impact-animation-period);
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            #slides__content-1-text-1 text {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 1.3);
+            }
+            #slides__content-1-text-2 text {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 2.6);
+            }
+            #slides__content-1-text-3 text {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 3.9);
+            }
+        }
     }
 }
+
 @media only screen and (max-width : 1280px) {
 
 }
