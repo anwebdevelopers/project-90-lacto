@@ -111,6 +111,35 @@
         transform: translateY(-30px);
     }
 }
+@keyframes impactBakteriaScaleX {
+    0% {
+        transform: scaleX(1);
+    }
+    2% {
+        transform: scaleX(1);
+    }
+    7% {
+        transform: scaleX(1.25);
+    }
+    12% {
+        transform: scaleX(1);
+    }
+    17% {
+        transform: scaleX(1.25);
+    }
+    22% {
+        transform: scaleX(1);
+    }
+    27% {
+        transform: scaleX(1.25);
+    }
+    32% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
 .impact__image {
     margin: 10rem 0 0 0;
     text-align: center;
@@ -121,10 +150,10 @@
         max-width: 100%;
         width: auto;
         height: auto;
-        #slides__background {
-            #slides__background-digit-1,
-            #slides__background-digit-2,
-            #slides__background-digit-3 {
+        #impact__background {
+            #impact__background-digit-1,
+            #impact__background-digit-2,
+            #impact__background-digit-3 {
                 //fill: #3E404D;
                 //animation: impactMain var(--impact-animation-period) linear  infinite;
 
@@ -133,54 +162,166 @@
                 animation-timing-function: ease;
                 animation-iteration-count: infinite;
             }
-            #slides__background-digit-1 {
+            #impact__background-digit-1 {
                 animation-delay: 0s;
             }
-            #slides__background-digit-2 {
+            #impact__background-digit-2 {
                 animation-delay: calc(var(--impact-animation-period) / 3);
             }
-            #slides__background-digit-3 {
+            #impact__background-digit-3 {
                 animation-delay: calc(var(--impact-animation-period) / 3 * 2);
             }
         }
-        #slides__bakteria-1 {
-
-        }
-        #slides__content-1 {
-            #slides__content-1-line-1,
-            #slides__content-1-line-2,
-            #slides__content-1-line-3 {
+        //.impact-bakteria-scale {
+        //    animation-name: impactBakteriaScaleX;
+        //    animation-duration: var(--impact-animation-period);
+        //    animation-timing-function: ease;
+        //    animation-iteration-count: infinite;
+        //}
+        [id*="impact__bakteria-"] {
+            #impact__bakteria-1-group-1,
+            #impact__bakteria-1-group-2,
+            #impact__bakteria-1-group-3,
+            #impact__bakteria-2-group-1,
+            #impact__bakteria-2-group-2,
+            #impact__bakteria-2-group-3,
+            #impact__bakteria-3-group-1,
+            #impact__bakteria-3-group-2,
+            #impact__bakteria-3-group-3 {
                 animation-name: impactOpacity;
                 animation-duration: var(--impact-animation-period);
                 animation-timing-function: ease;
                 animation-iteration-count: infinite;
             }
-            #slides__content-1-line-1 {
+            #impact__bakteria-1-group-1,
+            .impact-bakteria-scale {
                 animation-delay: calc(var(--impact-animation-period) / 100 * 1.3);
             }
-            #slides__content-1-line-2 {
+            #impact__bakteria-1-group-2 {
                 animation-delay: calc(var(--impact-animation-period) / 100 * 2.6);
             }
-            #slides__content-1-line-3 {
+            #impact__bakteria-1-group-3 {
                 animation-delay: calc(var(--impact-animation-period) / 100 * 3.9);
             }
+            #impact__bakteria-2-group-1 {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 1.3));
+            }
+            #impact__bakteria-2-group-2 {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 2.6));
+            }
+            #impact__bakteria-2-group-3 {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 3.9));
+            }
+            #impact__bakteria-3-group-1 {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 1.3));
+            }
+            #impact__bakteria-3-group-2 {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 2.6));
+            }
+            #impact__bakteria-3-group-3 {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 3.9));
+            }
+        }
+        //#impact__bakteria-1,
+        //#impact__bakteria-2,
+        //#impact__bakteria-3 {
+        //    //animation-name: impactBakteriaOpacity;
+        //    animation-duration: var(--impact-animation-period);
+        //    animation-timing-function: ease;
+        //    animation-iteration-count: infinite;
+        //}
+        //#impact__bakteria-1 {
+        //    animation-delay: calc(var(--impact-animation-period) / 100 * 0.9);
+        //}
+        //#impact__bakteria-2 {
+        //    animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 0.9));
+        //}
+        //#impact__bakteria-3 {
+        //    animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 0.9));
+        //}
+        [id*="impact__content-"] {
+            #impact__content-1-line-1,
+            #impact__content-1-line-2,
+            #impact__content-1-line-3,
+            #impact__content-2-line-1,
+            #impact__content-2-line-2,
+            #impact__content-2-line-3,
+            #impact__content-3-line-1,
+            #impact__content-3-line-2,
+            #impact__content-3-line-3{
+                animation-name: impactOpacity;
+                animation-duration: var(--impact-animation-period);
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            #impact__content-1-line-1 {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 1.3);
+            }
+            #impact__content-1-line-2 {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 2.6);
+            }
+            #impact__content-1-line-3 {
+                animation-delay: calc(var(--impact-animation-period) / 100 * 3.9);
+            }
+            #impact__content-2-line-1 {
+                 animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 1.3));
+             }
+            #impact__content-2-line-2 {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 2.6));
+            }
+            #impact__content-2-line-3 {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 3.9));
+            }
+            #impact__content-3-line-1 {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 1.3));
+            }
+            #impact__content-3-line-2 {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 2.6));
+            }
+            #impact__content-3-line-3 {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 3.9));
+            }
 
-            #slides__content-1-text-1 text,
-            #slides__content-1-text-2 text,
-            #slides__content-1-text-3 text {
+            #impact__content-1-text-1 text,
+            #impact__content-1-text-2 text,
+            #impact__content-1-text-3 text,
+            #impact__content-2-text-1 text,
+            #impact__content-2-text-2 text,
+            #impact__content-2-text-3 text,
+            #impact__content-3-text-1 text,
+            #impact__content-3-text-2 text,
+            #impact__content-3-text-3 text {
                 animation-name: impactOpacity, impactSlideDown;
                 animation-duration: var(--impact-animation-period);
                 animation-timing-function: ease;
                 animation-iteration-count: infinite;
             }
-            #slides__content-1-text-1 text {
+            #impact__content-1-text-1 text {
                 animation-delay: calc(var(--impact-animation-period) / 100 * 1.3);
             }
-            #slides__content-1-text-2 text {
+            #impact__content-1-text-2 text {
                 animation-delay: calc(var(--impact-animation-period) / 100 * 2.6);
             }
-            #slides__content-1-text-3 text {
+            #impact__content-1-text-3 text {
                 animation-delay: calc(var(--impact-animation-period) / 100 * 3.9);
+            }
+            #impact__content-2-text-1 text {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 1.3));
+            }
+            #impact__content-2-text-2 text {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 2.6));
+            }
+            #impact__content-2-text-3 text {
+                animation-delay: calc((var(--impact-animation-period) / 3) + (var(--impact-animation-period) / 100 * 3.9));
+            }
+            #impact__content-3-text-1 text {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 1.3));
+            }
+            #impact__content-3-text-2 text {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 2.6));
+            }
+            #impact__content-3-text-3 text {
+                animation-delay: calc((var(--impact-animation-period) / 3 * 2) + (var(--impact-animation-period) / 100 * 3.9));
             }
         }
     }
