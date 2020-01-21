@@ -158,10 +158,15 @@ body {
 	font-weight: 700;
 	line-height: 1.1;
 }
+.subtitle {
+	margin: 2rem 0 0 0;
+	font-size: 2.4rem;
+	line-height: 1.33;
+}
 .text {
-	&:not( :first-child ) {
-		margin-top: 6rem;
-	}
+	//&:not( :first-child ) {
+	//	margin-top: 6rem;
+	//}
 
 	&:after {
 		content: '';
@@ -180,10 +185,13 @@ body {
 	h1, h2, h3, h4, h5, h6, p, ul, ol, img, blockquote {
 		&:not( [ class*="align-" ] ) {
 			&:not(:first-child) {
-				margin-top: 4rem;
+				margin-top: 2rem;
+			}
+			&:not(:last-child) {
+				margin-bottom: 2rem;
 			}
 		}
-		margin-bottom: 4rem;
+
 	}
 	ul,ol {
 		li {
@@ -302,6 +310,7 @@ body {
 
 @import "components/effect";
 @import "components/nav";
+@import "components/symptoms";
 
 
 @media only screen and (max-width : 1280px) {
