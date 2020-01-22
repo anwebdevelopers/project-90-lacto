@@ -116,6 +116,9 @@ body {
 	max-width: calc( 1180px + 8% );
 	padding: 0 4%;
 	margin: 0 auto;
+
+	position: relative;
+	z-index: 1;
 }
 .clearfix:after {
 	content: '';
@@ -311,6 +314,9 @@ body {
 @import "components/effect";
 @import "components/nav";
 @import "components/symptoms";
+@import "components/danger";
+@import "components/causes";
+@import "components/benefits";
 
 
 @media only screen and (max-width : 1280px) {

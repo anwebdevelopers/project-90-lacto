@@ -1,0 +1,317 @@
+.benefits {
+    padding: 5rem 0;
+}
+.benefits__subtitle {
+    color: $color-accent;
+}
+.benefits__head {
+    margin-top: 5rem;
+
+    display: flex;
+}
+.benefits__stages {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    width: 50%;
+
+    padding: 4rem 7rem;
+    border-radius: 50rem;
+    border: 1rem solid rgba(255, 255, 255, 0);
+    background-color: #fff;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to bottom, #0089CF, #DB4580);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    counter-reset: benefits-counter;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.benefits__stages-item {
+    flex: 0 0 auto;
+    width: calc(50% - 5rem);
+    counter-increment: benefits-counter;
+    &:nth-child(even) {
+        margin-left: 10rem;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            left: -7rem;
+            top: 0;
+            width: 4rem;
+            height: 8rem;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 42 77' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 5L35.6905 37.6086C36.4232 38.3871 36.4141 39.6042 35.6699 40.3717L5 72' stroke='url(%23paint0_linear)' stroke-width='10' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='5' y1='5' x2='5' y2='72' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230089CF'/%3E%3Cstop offset='1' stop-color='%23DB4580'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+            -webkit-background-size: contain;
+            background-size: contain;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+.benefits__stages-item-title {
+    color: $color-accent;
+
+    display: flex;
+    &:before {
+        content: counter(benefits-counter);
+        display: block;
+        font-size: 7.2rem;
+        font-weight: 700;
+        line-height: .9;
+    }
+    &:after {
+        content: attr(data-benefits-title);
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+}
+.benefits__stages-item-text {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.33;
+}
+.benefits__note {
+    flex: 0 0 auto;
+    width: 40%;
+    margin-left: 10%;
+}
+.benefits__note-image {
+    margin: 0;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.benefits__note-text {
+    margin-top: 2rem;
+
+    font-size: 1.8rem;
+    //font-weight: 700;
+    line-height: 1.5;
+}
+.benefits__wrapper {
+    position: relative;
+    z-index: 1;
+}
+.benefits__background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.benefits__box {
+    margin-top: 5rem;
+    padding: 5rem 0 10rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.benefits__item {
+    flex: 0 0 auto;
+    width: 47.5%;
+    margin-top: 5rem;
+
+}
+.benefits__item-icon {
+    margin: 0;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.benefits__item-title {
+    margin: 1.5rem 0 0 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+.benefits__item-text {
+    margin: 1.5rem 0 0 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+    .benefits__note {
+        margin-left: 5%;
+    }
+    .benefits__stages {
+        width: 55%;
+        padding: 3rem 4rem;
+    }
+    .benefits__stages-item {
+        width: calc(50% - 3.5rem);
+
+        &:nth-child(even) {
+            margin-left: 7rem;
+
+            &:before {
+                left: -5rem;
+                width: 3rem;
+                height: 6rem;
+            }
+        }
+    }
+    .benefits__stages-item-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    //.benefits__head {
+    //    display: block;
+    //}
+    //.benefits__stages {
+    //    width: auto;
+    //    padding: 4rem 7rem;
+    //}
+    .benefits__stages-item {
+        width: calc(50% - 3rem);
+
+
+        &:nth-child(even) {
+            margin-left: 6rem;
+
+            &:before {
+                left: -4.5rem;
+                width: 3rem;
+                height: 6rem;
+            }
+        }
+    }
+    .benefits__stages-item-text {
+        font-size: 1.5rem;
+    }
+    //.benefits__note {
+    //    margin-left: 0;
+    //    width: auto;
+    //    margin-top: 6rem;
+    //}
+    ////.benefits__note-image {
+    ////    text-align: center;
+    ////}
+    //.benefits__box {
+    //    display: block;
+    //}
+    //.benefits__item {
+    //    width: auto;
+    //}
+}
+
+@media only screen and (max-width : 640px) {
+    .benefits__head {
+        display: block;
+    }
+    .benefits__stages {
+        width: auto;
+        padding: 4rem 7rem;
+    }
+    //.benefits__stages-item {
+    //    width: calc(50% - 4rem);
+    //
+    //
+    //    &:nth-child(even) {
+    //        margin-left: 8rem;
+    //
+    //        &:before {
+    //            left: -6rem;
+    //            width: 4rem;
+    //            height: 8rem;
+    //        }
+    //    }
+    //}
+    //.benefits__stages-item-text {
+    //    font-size: 1.6rem;
+    //}
+    .benefits__note {
+        margin-left: 0;
+        width: auto;
+        margin-top: 6rem;
+    }
+    //.benefits__note-image {
+    //    text-align: center;
+    //}
+    .benefits__box {
+        display: block;
+    }
+    .benefits__item {
+        width: auto;
+    }
+    //.benefits__stages {
+    //    padding: 3rem 4rem;
+    //}
+    //.benefits__stages-item {
+    //    width: calc(50% - 3.5rem);
+    //
+    //    &:nth-child(even) {
+    //        margin-left: 7rem;
+    //
+    //        &:before {
+    //            left: -5rem;
+    //            width: 3rem;
+    //            height: 6rem;
+    //        }
+    //    }
+    //}
+    //.benefits__stages-item-text {
+    //    font-size: 1.6rem;
+    //}
+}
+
+@media only screen and (max-width : 480px) {
+    .benefits__stages {
+        display: block;
+        padding: 7rem 15%;
+        text-align: center;
+        //border-radius: 18rem;
+    }
+    .benefits__stages-item {
+        width: auto;
+        &:nth-child(even),
+        &:not(:first-child){
+            margin-left: 0;
+            margin-top: 8rem;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: - 7rem;
+                left: 50%;
+                transform: translateX(-50%) rotate(90deg);
+                //transform-origin: center center;
+                width: 3rem;
+                height: 6rem;
+                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 42 77' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 5L35.6905 37.6086C36.4232 38.3871 36.4141 39.6042 35.6699 40.3717L5 72' stroke='url(%23paint0_linear)' stroke-width='10' stroke-linecap='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='5' y1='5' x2='5' y2='72' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%230089CF'/%3E%3Cstop offset='1' stop-color='%23DB4580'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+                -webkit-background-size: contain;
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .benefits__stages-item-title {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+
+}
