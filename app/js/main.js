@@ -35,77 +35,80 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
         /*******************************************************/
         //HERO SLIDER
         /*******************************************************/
-        document.addEventListener('readystatechange', function() {
-            if (document.readyState === 'complete') {
-                $( '.hero__box' ).each( function () {
-                    const $hero__box = $( this );
-                    $hero__box.wrap('<div class="hero__slider"></div>')
-                        .before('<div class="hero__head"><div class="hero__head-container swiper-container"><div class="hero__head-wrapper swiper-wrapper"></div></div></div>')
-                        .find( '.hero__item' )
-                        .addClass( 'swiper-slide' )
-                        .wrapAll( '<div class="hero__container swiper-container"><div class="hero__wrapper swiper-wrapper"></div></div>' )
-                        .each( function () {
-                            $hero__box.closest('.hero__slider').find('.hero__head-wrapper').append( $( this ).find('.hero__item-image').addClass( 'swiper-slide' ) )
-                        } )
-                        .end().append( '<div class="hero__dots"></div>' );
+        ( function($) {
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    $( '.hero__box' ).each( function () {
+                        const $hero__box = $( this );
+                        $hero__box.wrap('<div class="hero__slider"></div>')
+                            .before('<div class="hero__head"><div class="hero__head-container swiper-container"><div class="hero__head-wrapper swiper-wrapper"></div></div></div>')
+                            .find( '.hero__item' )
+                            .addClass( 'swiper-slide' )
+                            .wrapAll( '<div class="hero__container swiper-container"><div class="hero__wrapper swiper-wrapper"></div></div>' )
+                            .each( function () {
+                                $hero__box.closest('.hero__slider').find('.hero__head-wrapper').append( $( this ).find('.hero__item-image').addClass( 'swiper-slide' ) )
+                            } )
+                            .end().append( '<div class="hero__dots"></div>' );
 
-                    const heroHeadSwiper = new Swiper( $hero__box.closest('.hero__slider').find( '.hero__head-container' ), {
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                        loop: true,
-                        watchSlidesVisibility: true,
-                        watchSlidesProgress: true,
-                        speed: 2500,
-                    });
+                        const heroHeadSwiper = new Swiper( $hero__box.closest('.hero__slider').find( '.hero__head-container' ), {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            loop: true,
+                            watchSlidesVisibility: true,
+                            watchSlidesProgress: true,
+                            speed: 2500,
+                        });
 
-                    const heroSwiper = new Swiper( $hero__box.find( '.hero__container' ), {
-                        slidesPerView: 1,
-                        speed: 1500,
-                        spaceBetween: 0,
-                        loop: true,
-                        watchSlidesVisibility: true,
-                        watchSlidesProgress: true,
+                        const heroSwiper = new Swiper( $hero__box.find( '.hero__container' ), {
+                            slidesPerView: 1,
+                            speed: 1500,
+                            spaceBetween: 0,
+                            loop: true,
+                            watchSlidesVisibility: true,
+                            watchSlidesProgress: true,
 
-                        autoplay: {
-                            delay: 5000,
-                        },
+                            autoplay: {
+                                delay: 5000,
+                            },
 
-                        pagination: {
-                            el: $hero__box.find('.hero__dots'),
-                            clickable: true,
-                            type: 'bullets',
-                        },
-                        on: {
-                            paginationRender: function () {
+                            pagination: {
+                                el: $hero__box.find('.hero__dots'),
+                                clickable: true,
+                                type: 'bullets',
+                            },
+                            on: {
+                                paginationRender: function () {
 
-                                const thisSwiper = this;
+                                    const thisSwiper = this;
 
-                                $(thisSwiper.pagination.bullets).each(function(i) {
+                                    $(thisSwiper.pagination.bullets).each(function(i) {
 
-                                    $(this).text(i + 1 );
+                                        $(this).text(i + 1 );
 
-                                });
-                            }
-                        },
+                                    });
+                                }
+                            },
+                        } );
+
+                        heroSwiper.on('slideChange', function () {
+                            heroHeadSwiper.slideTo(heroSwiper.activeIndex, 2000, false);
+                        });
+
+                        window.addEventListener( 'resize', function () {
+                            heroHeadSwiper.updateSize();
+                            heroSwiper.updateSize();
+                        } );
+
                     } );
+                }
+            });
+        } (jQuery) );
 
-                    heroSwiper.on('slideChange', function () {
-                        heroHeadSwiper.slideTo(heroSwiper.activeIndex, 2000, false);
-                    });
-
-                    window.addEventListener( 'resize', function () {
-                        heroHeadSwiper.updateSize();
-                        heroSwiper.updateSize();
-                    } );
-
-                } );
-            }
-        });
 
         /*******************************************************/
         //HERO PARALLAX
         /*******************************************************/
-        ( function() {
+        ( function($) {
             $('[data-parallax-animation]').each( function () {
 
                 const parallaxInstance = new Parallax(this, {
@@ -128,16 +131,13 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
                     windowWidth <= 768 ? parallaxInstance.disable() : parallaxInstance.enable()
                 } );
             });
-
-
-
-        } () );
+        } (jQuery) );
 
         //*********************************************************//
         //MOUSE OVER ANIMATIONS
         //*********************************************************//
 
-        ( function() {
+        ( function($) {
 
             if ( window.innerWidth >= 1025 ) {
 
@@ -148,7 +148,27 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
                 } );
             }
 
-        } () );
+        } (jQuery) );
+
+        //*********************************************************//
+        //ACCORDION
+        //*********************************************************//
+
+        ( function($) {
+            $('.accordion').each(function() {
+                var $this = $(this);
+                $this.not(':first-child').children('.accordion__box').hide();
+            }).on('click', '.accordion__button', function(e) {
+                e.stopPropagation();
+                var $this = $(this);
+                $this.closest('.accordion').hasClass('active') ? $this.closest('.accordion').removeClass('active').children('.accordion__box').slideUp(200) : $this.closest('.accordion').addClass('active').children('.accordion__box').slideDown(200).end().siblings().removeClass('active').children('.accordion__box').slideUp(200);
+            });
+        } (jQuery) );
+
+        /*******************************************************/
+
+        /*******************************************************/
+
 
     } ( jQuery ) );
 });

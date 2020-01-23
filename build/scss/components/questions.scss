@@ -1,0 +1,134 @@
+.questions {
+    padding: 5rem 0;
+}
+.questions__box {
+    margin-top: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.questions__person {
+    order: 1;
+    flex: 0 0 auto;
+    width: 24%;
+}
+.questions__person-image {
+    margin: 0;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+.questions__person-title {
+    margin-top: 6rem;
+
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: $color-accent;
+}
+.questions__person-text {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.questions__list {
+    flex: 0 0 auto;
+    width: 65%;
+    border-top: 1px solid rgba(0, 137, 207, 0.5);
+}
+.questions__item {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 137, 207, 0.5);
+    &:before {
+        top: 1.5rem;
+    }
+}
+.questions__item-title {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 700;
+    transition: .3s;
+    &:hover, &:active {
+        color: $color-accent;
+    }
+}
+.questions__item-text {
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width : 1280px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+    .questions__person {
+        width: 29%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .questions__box {
+        display: block;
+    }
+    .questions__person {
+        width: auto;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+    .questions__person-image {
+        float: left;
+        width: 30%;
+
+    }
+    .questions__person-title,
+    .questions__person-text {
+        margin-left: 35%;
+    }
+    .questions__list {
+        width: auto;
+        margin-top: 6rem;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+    .questions__person {
+        &:after {
+            display: none;
+        }
+    }
+    .questions__person-image {
+        float: none;
+        width: auto;
+    }
+    .questions__person-title {
+        br {
+            display: none;
+        }
+    }
+    .questions__person-title,
+    .questions__person-text {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .questions__item-title,
+    .questions__item-text {
+        font-size: 1.6rem;
+    }
+}
