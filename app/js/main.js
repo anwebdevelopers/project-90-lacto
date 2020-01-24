@@ -150,6 +150,40 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
 
         } (jQuery) );
 
+        /*******************************************************/
+        //CARD ANCHOR SCROLL
+        /*******************************************************/
+        ( function() {
+
+            const $scroll = $('.scroll');
+
+            if ( $scroll.length ) {
+
+                let startPos = $scroll.offset().top;
+
+                $( window ).scroll( function() {
+
+                    if ( $( window ).scrollTop() >= startPos ) {
+
+                        if ( ! $scroll[ 0 ].hasAttribute( 'active' ) ) {
+                            const navHeight = $scroll.height();
+                            $scroll.css( { 'min-height': navHeight + 'px' } ).attr( 'active', '' );
+                        }
+                    } else {
+
+                        $scroll.removeAttr( 'active' ).removeAttr( 'style' );
+                    }
+                } );
+
+                $( window ).resize( function() {
+                    startPos = $scroll.offset().top;
+                } );
+
+                $( '.scroll__nav a' ).mPageScroll2id();
+            }
+
+        } () );
+
         //*********************************************************//
         //ACCORDION
         //*********************************************************//
@@ -157,7 +191,7 @@ document.addEventListener( 'DOMContentLoaded', function( event ) {
         ( function($) {
             $('.accordion').each(function() {
                 var $this = $(this);
-                $this.not(':first-child').children('.accordion__box').hide();
+                $this/*.not(':first-child')*/.children('.accordion__box').hide();
             }).on('click', '.accordion__button', function(e) {
                 e.stopPropagation();
                 var $this = $(this);

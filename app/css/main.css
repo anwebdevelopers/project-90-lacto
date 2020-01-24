@@ -447,6 +447,7 @@ body::-webkit-scrollbar-thumb {
 
 html {
 	overflow-x: hidden;
+	overflow-y: auto;
 	width: 100%;
 	font-size: 10px;
 }
@@ -468,6 +469,7 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .container {
@@ -520,7 +522,7 @@ body {
 }
 
 .background {
-	position: absolute;
+	position: absolute !important;
 	z-index: -1;
 }
 
@@ -3336,37 +3338,64 @@ body {
 	}
 }
 
-.nav {
+.scroll {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	margin: 3rem 0;
 }
 
-.nav__box {
+.scroll[active] .scroll__inner {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	right: 0;
+}
+
+.scroll[active] .scroll__inner .scroll__nav {
+	padding: 1rem 2rem;
+	-webkit-box-shadow: 0 0 3rem -1.5rem #0089cf;
+	box-shadow: 0 0 3rem -1.5rem #0089cf;
+}
+
+.scroll__nav {
 	margin: 0;
 	list-style: none;
 	padding: 2rem;
 	border-radius: 8rem;
 	background-image: -o-linear-gradient(271.25deg, #e8f7ff 8.88%, #fff3f8 91.95%);
 	background-image: linear-gradient(178.75deg, #e8f7ff 8.88%, #fff3f8 91.95%);
+	font-size: 1.6rem;
+	line-height: 1;
+	white-space: nowrap;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	transform: scaleY(-1);
 }
 
-.nav__box li {
+.scroll__nav li {
 	-webkit-box-flex: 1;
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	-webkit-transform: scaleY(-1);
+	-ms-transform: scaleY(-1);
+	transform: scaleY(-1);
 	text-align: center;
 }
 
-.nav__box li a {
+.scroll__nav li a {
 	text-decoration: none;
 	color: inherit;
 	display: inline-block;
@@ -3378,14 +3407,26 @@ body {
 	transition: .3s;
 }
 
-.nav__box li a.active {
+.scroll__nav li a.mPS2id-highlight-first {
 	background-color: #fff;
 	text-shadow: 0 0 0 currentColor;
 }
 
-.nav__box li a:hover,
-.nav__box li a:active {
+.scroll__nav li a:hover,
+.scroll__nav li a:active {
 	color: #db4580;
+}
+
+@media only screen and (max-width: 1280px) {
+	.scroll__inner .container {
+		padding: 0;
+	}
+	.scroll[active] .scroll__inner .scroll__nav {
+		padding: 1rem 1.5rem;
+	}
+	.scroll__nav {
+		border-radius: 0;
+	}
 }
 
 .symptoms {

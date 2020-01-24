@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42f91a77-5f6e-47ea-8c83-f0eb74a5d28b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/img/img-note.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/img-questions-person.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/note.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/questions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scss/components/steps.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/img-steps-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/img-steps-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/scss/components/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/components/scroll.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <list id="bf1cc2a1-eed9-4673-be9b-2a8bb0ebd5de" name="ignore" comment="ignore" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +92,9 @@
       <workItem from="1579489129106" duration="7817000" />
       <workItem from="1579598067567" duration="4632000" />
       <workItem from="1579663724944" duration="15219000" />
-      <workItem from="1579753479313" duration="10081000" />
+      <workItem from="1579753479313" duration="10178000" />
+      <workItem from="1579857174190" duration="104000" />
+      <workItem from="1579857317085" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="Стартовый коммит">
       <created>1565692588708</created>
@@ -173,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579696426817</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="23.01.2020">
+      <created>1579780587255</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1579780587255</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,17 +212,18 @@
     <MESSAGE value="20.01.2020" />
     <MESSAGE value="21.01.2020" />
     <MESSAGE value="22.01.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="22.01.2020" />
+    <MESSAGE value="23.01.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="23.01.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577414826197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577414826197" />
-    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1579696425028">
+    <state x="585" y="115" key="CommitChangelistDialog2" timestamp="1579780585157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579696425028" />
+    <state x="585" y="115" key="CommitChangelistDialog2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579780585157" />
     <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1577327987339">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -232,14 +240,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1577327987338" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579696428375">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1579780588684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579696428375" />
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579753479928">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579780588684" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1579876001184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579753479928" />
+    <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1579876001184" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578538147229" />
     <state x="656" y="252" width="737" height="606" key="find.popup" timestamp="1579412360940">
       <screen x="0" y="0" width="1920" height="1040" />

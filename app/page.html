@@ -49,7 +49,7 @@
 		</div>
 	</header>
 
-	<div class="effect">
+	<div id="effect" class="effect">
 		<div class="container">
 			<div class="effect__box">
 				<div class="effect__content">
@@ -74,23 +74,25 @@
 		</div>
 	</div>
 
-	<!--<section class="nav">
-		<div class="container">
-			<ul class="nav__box">
-				<li><a href="#">Препарат</a></li>
-				<li><a href="#" class="active">Симптомы</a></li>
-				<li><a href="#">Последствия</a></li>
-				<li><a href="#">Причины</a></li>
-				<li><a href="#">Преимущества</a></li>
-				<li><a href="#">Как принимать</a></li>
-				<li><a href="#">Где купить</a></li>
-				<li><a href="#">Вопросы и ответы</a></li>
-				<li><a href="#">Статьи</a></li>
-			</ul>
+	<section class="scroll">
+		<div class="scroll__inner">
+			<div class="container">
+				<ul class="scroll__nav">
+					<li><a href="#effect">Препарат</a></li>
+					<li><a href="#symptoms">Симптомы</a></li>
+					<li><a href="#danger">Последствия</a></li>
+					<li><a href="#causes">Причины</a></li>
+					<li><a href="#benefits">Преимущества</a></li>
+					<li><a href="#steps">Как принимать</a></li>
+					<li><a href="#distributors">Где купить</a></li>
+					<li><a href="#questions">Вопросы и ответы</a></li>
+					<li><a href="#articles">Статьи</a></li>
+				</ul>
+			</div>
 		</div>
-	</section>-->
+	</section>
 
-	<section class="symptoms">
+	<section id="symptoms" class="symptoms">
 		<div class="container">
 			<h2 class="title">Симптомы</h2>
 			<div class="subtitle">проявления вагинального дисбиоза <br>(бактериального вагиноза)</div>
@@ -148,7 +150,7 @@
 		</div>
 	</section>
 
-	<section class="danger">
+	<section id="danger" class="danger">
 		<div class="danger__background">
 			<img src="img/bg-danger.png" alt="">
 		</div>
@@ -209,7 +211,7 @@
 		</div>
 	</section>
 
-	<section class="causes">
+	<section id="causes" class="causes">
 		<div class="container">
 			<h2 class="title">Причины</h2>
 			<div class="subtitle">Бактериальный вагиноз может <br>возникнуть, если вы…</div>
@@ -263,7 +265,7 @@
 		</div>
 	</section>
 
-	<section class="benefits">
+	<section id="benefits" class="benefits">
 		<div class="container">
 			<h2 class="title">Почему <br>Лактожиналь?</h2>
 			<div class="benefits__subtitle subtitle">В лечении бактериального вагиноза <br>используется двухэтапный подход:</div>
@@ -358,7 +360,7 @@
 		</div>
 	</section>
 
-	<section class="steps">
+	<section id="steps" class="steps">
 		<div class="container">
 			<h2 class="title">Как принимать <br>Лактожиналь?</h2>
 			<div class="steps__box">
@@ -422,7 +424,7 @@
 		</div>
 	</section>
 
-	<section class="distributors">
+	<section id="distributors" class="distributors">
 		<figure class="distributors__image">
 			<img src="img/img-distributors.png" alt="">
 		</figure>
@@ -440,10 +442,11 @@
 					<li><a href="#"><img src="img/img-distributors-4.png" alt=""></a></li>
 				</ul>
 			</div>
+			<div class="background" style="left:50%;top:0;width:24rem;height:24rem;filter:blur(70px);opacity:0.6;">
+				<svg><use href="#image-circle-pink"/></svg>
+			</div>
 		</div>
-		<div class="background" style="left:50%;top:0;width:24rem;height:24rem;filter:blur(70px);opacity:0.6;">
-			<svg><use href="#image-circle-pink"/></svg>
-		</div>
+
 		<div class="background" data-parallax-animation style="left:30%;bottom:25%;width:4.4rem;height:4.4rem;filter:blur(.5px)">
 			<svg data-depth="0.4"><use href="#image-circle-pink"/></svg>
 		</div>
@@ -452,7 +455,7 @@
 		</div>
 	</section>
 
-	<section class="questions">
+	<section id="questions" class="questions">
 		<div class="container">
 			<h2 class="title">Вопросы <br>эксперту</h2>
 			<div class="questions__box">
@@ -497,7 +500,7 @@
 		</div>
 	</section>
 
-	<section class="articles">
+	<section id="articles" class="articles">
 		<div class="container">
 			<h2 class="title">Полезные <br>статьи</h2>
 			<div class="articles__box">
@@ -567,9 +570,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="background" style="left:45%;bottom:5%;width:24rem;height:24rem;filter:blur(70px);opacity:0.6;">
-			<svg><use href="#image-circle-pink"/></svg>
+			<div class="background" style="left:45%;bottom:5%;width:24rem;height:24rem;filter:blur(70px);opacity:0.6;">
+				<svg><use href="#image-circle-pink"/></svg>
+			</div>
 		</div>
 	</footer>
 

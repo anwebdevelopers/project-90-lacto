@@ -122,6 +122,7 @@ gulp.task( 'scripts', () => {
         'app/libs/swiper/js/swiper.min.js',
         'app/libs/parallax/parallax.js',
         'app/libs/tilt.js/dest/tilt.jquery.min.js',
+        'app/libs/page-scroll-to-id-master/jquery.malihu.PageScroll2id.js'
         // 'app/libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js',
         // 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
     ] )
